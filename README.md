@@ -1,3 +1,7 @@
+Basic log-in page:
+![Alt Text](https://media.giphy.com/media/olETGo8bwHbRNavyms/giphy.gif)
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
