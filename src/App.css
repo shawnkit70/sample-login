@@ -1,38 +1,126 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@700&display=swap');
+
+body {
+  margin: 0;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.root{
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.security-screen{
+  height: 100%;
+  width: 100%;
+}
+.item2{
+  width: 170px;
+  height: 170px;
+  background: blueviolet;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  border: 0.2rem solid #fff;
+  border-radius: 50%;
+  margin: 5px auto;
+  padding: 2rem;
+  box-shadow:
+  0 0 .2rem #fff,
+  0 0 .2rem #fff,
+  0 0 2rem #63e8ff,
+  0 0 0.8rem #04d9ff,
+  0 0 2.8rem #04d9ff,
+  inset 0 0 1.3rem #04d9ff;
+  z-index: 100;
+  position:absolute ;
+  left: 33%;
+  right: 33%;
+  top: 20%;
+  bottom: 20%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+label{
+  font-size: small;
+  color: #63e8ff;
+}
+
+.slide-door{
+  background:#202222;
+  width: 49.30%;
+  height: 100vh;
+  float: left ;
+  position : relative ;
+  z-index: 2 ;
+  border: 3px solid #04d9ff;
+  transition: all 1s ease-out;
+}
+
+.left{
+  transform: translate(-100%);
+}
+
+.right{
+  transform: translate(100%);
+  display: none;
+}
+
+.logged-in{
+  background: #081111;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  color: #04d9ff;
+}
+
+img{
+  width: 50px;
+  height: 50px;
+  margin-top: 8px;
+}
+
+form{
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+form p{
+  font-size: xx-small;
+  margin: 0;
+  text-align: center;
+  font-size: x-small;
 }
 
-.App-link {
-  color: #61dafb;
+input[type=password]{
+  border:1px solid #63e8ff;
+  color: black;
+  background: blueviolet;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button{
+  font-family: "Barlow" ;
+  background-color: #00b5cc;
+  border: 0;
+  box-shadow: none;
+  border-radius: 0px;
+  padding:5px 10px;
+  margin-top: 20px;
+}
+
+.countdown{
+  position: absolute;
+  z-index: 100;
+  font-size: x-large;
+  left: 80%;
+  top: 80%;
+  color: #04d9ff;
+}
+
+.rotate{
+transform: rotate(360deg);
+transition: all 1s ease-in-out;
 }
