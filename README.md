@@ -1,4 +1,11 @@
 Basic log-in page:
+
+
+
+
+
+
+
 ![Alt Text](https://media.giphy.com/media/olETGo8bwHbRNavyms/giphy.gif)
 
 
