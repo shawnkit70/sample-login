@@ -64,7 +64,6 @@ label{
 
 .right{
   transform: translate(100%);
-  display: none;
 }
 
 .logged-in{
